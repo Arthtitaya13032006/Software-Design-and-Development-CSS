@@ -1018,12 +1018,129 @@ blockquote {
 
 ### ผลการทดลอง
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('image/product5.jpg')"></div>
+            <div class="product-details">
+                <h3 class="product-title">ฮาร์ทบีท</h3>
+                <div class="product-price">฿10</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('image/product6.jpg')"></div>
+            <div class="product-details">
+                <h3 class="product-title">มายชูวี่มิลค์</h3>
+                <div class="product-price">฿10</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+       <!-- สินค้าชิ้นที่ 3 -->
+       <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product7.jpg')"></div>
+        <div class="product-details">
+            <h3 class="product-title">มายมิ้น</h3>
+            <div class="product-price">฿10</div>
+            <div class="product-action">
+                <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </div>
+    <!-- สินค้าชิ้นที่ 4 -->
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product8.jpg')"></div>
+        <div class="product-details">
+            <h3 class="product-title">ไดนาไมท์</h3>
+            <div class="product-price">฿10</div>
+            <div class="product-action">
+                <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
 [วางโค้ด HTML ที่นี่]
 ```
 ```css
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
 [วางโค้ด CSS ที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/942078c8-9fca-46f1-8c7e-f3497743229f)
+
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
