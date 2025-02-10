@@ -770,8 +770,6 @@ body {
     padding: 0;
     color: #ffffff; 
 }
-
-/* คอนเทนเนอร์ของบทความ */
 .blog-post {
     max-width: 830px;
     margin: 2rem auto;
