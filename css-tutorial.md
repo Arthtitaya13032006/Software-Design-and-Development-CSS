@@ -251,39 +251,6 @@ div > p {
     </nav>
 </body>
 </html>
-``` css
-nav {
-    background-color: #222; 
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav > ul > li {
-    margin: 0 10px;
-}
-
-.menu-item {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.menu-item:hover {
-    background-color: #666; 
-    border-radius: 5px;
-}
-
-#active {
-    background-color: #ff6600; 
-    border-radius: 5px;
-}
 [วางโค้ดที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
@@ -392,9 +359,72 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product1.jpg')"></div>
+        <div class="product-info">
+            <h2 class="product-title">Bennett</h2>
+            <p class="product-price">฿33</p>
+            <p class="product-description">
+                สบู่วิตามิน อี เบนเนท สูตรเพิ่มวิตามินซีจากธรรมชาติ รู้สึกได้ทันที ว่าผิวเกลี้ยงเกลา นุ่มนวลยิ่งขึ้นด้วยความมหัศจรรย์แห่งการบำรุง ของวิตามินอีและวิตามินซี 
+                ผสมอย่างลงตัวกับสารสกัดจาก ธรรมชาติ จึงทำให้ผิวดูผุดผ่องดูเนียนสวยขึ้น ปกป้องผิวจากสิว ฝ้า ผด ระงับกลิ่นตัวได้ผลแน่นอน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product2.jpg')"></div>
+            <h2 class="product-title">เซรั่มลดรอยสิว mizumi</h2>
+            <p class="product-price">฿49</p>
+            <p class="product-description">
+                รอยแดง รอยดำ รอยสิว ดูจางลงภายใน 7 วัน
+                อ่อนโยน สำหรับผิวเป็นสิวโดยเฉพาะ ปราศจากแอลฯ น้ำหอม น้ำมัน พาราเบน และสี
+                สำหรับใช้ทั่วหน้า และใช้ร่วมกับยารักษาสิวได้
+                คุณแม่ท้อง คุณแม่ให้นมลูก สามารถใช้ได้
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product3.jpg')"></div>
+        <div class="product-info">
+            <h2 class="product-title">เจลอโลอีสเนลไบร์ทสมูทโตะ</h2>
+            <p class="product-price">฿49</p>
+            <p class="product-description">
+                จลว่านหางจระเข้ เข้มข้น99.5% ผสมวิตามินอีและสารสกัดเมือก 
+                หอยทากจากธรรมชาติ เนื้อเจลอ่อนนุ่มบางเบาซึมซาบเร็ว เหมาะ สำหรับทุกสภาพผิว โดยเฉพาะผิวบอบบางแพ้ง่าย
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('image/product4.webp')"></div>
+        <div class="product-info">
+            <h2 class="product-title">สมูทโตะอเลสเนลไวท์ แอคเน่สลิปปิ้งเซรั่ม</h2>
+            <p class="product-price">฿49</p>
+            <p class="product-description">
+                นวัตกรรมใหม่ล่าสุด ด้วยการผสานระหว่างสลิปปิ้งมาส์คในสูตรเซรั่ม ทำให้ได้เนื้อว่านหางจระเข้เข้มข้นอ่อนนุ่ม บางเบา อุดมไปด้วยสารสกัดมะเขือเทศ เมือกหอยทาก 
+                และที ทรี ออยล์ ช่วยให้ผิวนุ่ม รูขุมขนแลดูกระชับ ผิวไม่มัน ปราศจากแอลกอฮอล์ และน้ำหอม เหมาะสำหรับผิวเป็นสิว ผิวบอบบาง แพ้ง่าย
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+</body>
+</html>
 [วางโค้ดที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/b73872a0-f83a-401d-be56-3286099325d2)
+![image](https://github.com/user-attachments/assets/704fb844-5e87-4821-8d06-5a996c29b972)
+![image](https://github.com/user-attachments/assets/e5814599-ceb2-4500-8008-e94eab293012)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
