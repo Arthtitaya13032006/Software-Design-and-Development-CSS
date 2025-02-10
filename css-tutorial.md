@@ -608,12 +608,152 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉลาด กับ คิดเป็น เหมือนกันมั้ย?</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">ฉลาด กับ คิดเป็น เหมือนกันมั้ย?</h1>
+            <div class="post-meta">โพสต์เมื่อ 1 มกราคม 2025 | โดย นางสาวอาทิตยา ผิวขำ</div>
+        </header>
+        
+        <div class="post-content">
+            <p>หลายคนอาจเคยได้ยินคำว่า "ฉลาด" และ "คิดเป็น" แล้วสงสัยว่าทั้งสองอย่างนี้เหมือนกันหรือไม่ บางครั้งเรามักจะใช้คำเหล่านี้แทนกันโดยไม่รู้ตัว แต่ในความเป็นจริง ทั้งสองแนวคิดนี้มีความแตกต่างกันอย่างชัดเจน</p>
+
+            <h2>1. "ฉลาด" คืออะไร?</h2>
+            <p>ความฉลาดมักหมายถึง **ความสามารถทางสติปัญญา (IQ)** เช่น</p>
+            <ul>
+                <li>การจดจำข้อมูลได้ดี</li>
+                <li>การเรียนรู้เร็ว</li>
+                <li>การแก้โจทย์คณิตศาสตร์หรือปัญหาทางเทคนิคได้ไว</li>
+                <li>มีตรรกะและเหตุผลที่แม่นยำ</li>
+            </ul>
+
+            <h2>2. "คิดเป็น" คืออะไร?</h2>
+            <p>การคิดเป็นไม่ได้วัดที่ IQ แต่เกี่ยวข้องกับ **ทักษะทางความคิดและการตัดสินใจ** เช่น</p>
+            <ul>
+                <li>การมองปัญหาในมุมกว้างและวิเคราะห์อย่างรอบคอบ</li>
+                <li>การแก้ปัญหาชีวิตได้ดี</li>
+                <li>การควบคุมอารมณ์และตัดสินใจอย่างมีเหตุผล</li>
+                <li>การเข้าใจผู้อื่นและรู้จักปรับตัวให้เข้ากับสถานการณ์</li>
+            </ul>
+
+            <h2>สรุป: คนฉลาด ≠ คิดเป็น</h2>
+            <blockquote>
+                "คนฉลาดอาจมีความรู้เยอะ แต่ถ้าไม่รู้จักใช้ความรู้นั้นให้เกิดประโยชน์ ก็อาจตัดสินใจผิดพลาดในชีวิตได้"
+            </blockquote>
+            <blockquote>
+                "คนคิดเป็นอาจไม่ได้เรียนเก่งที่สุด แต่สามารถนำสิ่งที่รู้ไปใช้ได้อย่างมีประสิทธิภาพ"
+            </blockquote>
+
+            <h2>แนวทางการเป็นทั้ง "ฉลาด" และ "คิดเป็น"</h2>
+            <ul>
+                <li><strong>เรียนรู้ตลอดเวลา:</strong> ไม่ใช่แค่เรียนเก่ง แต่ต้องรู้จักนำความรู้ไปใช้ให้เป็น</li>
+                <li><strong>ฝึกคิดเชิงวิเคราะห์:</strong> ไม่เชื่ออะไรง่าย ๆ แต่ใช้เหตุผลและข้อมูลที่รอบด้าน</li>
+                <li><strong>พัฒนาทักษะทางอารมณ์ (EQ):</strong> เพื่อให้สามารถจัดการกับความรู้สึกและความสัมพันธ์กับผู้อื่นได้</li>
+                <li><strong>ฝึกตัดสินใจอย่างรอบคอบ:</strong> ไม่ใช่แค่เก่งเรื่องความรู้ แต่ต้องเก่งเรื่องชีวิตด้วย</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
+
 [วางโค้ด HTML ที่นี่]
 ```
 ```css
+body {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    background-color: #6486dd; 
+    margin: 0;
+    padding: 0;
+    color: #ffffff; 
+}
+
+/* คอนเทนเนอร์ของบทความ */
+.blog-post {
+    max-width: 830px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #121d98; 
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+
+.post-content {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.post-content h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff; 
+    margin: 2rem 0 1rem;
+    background-color: #f2aa46; 
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    border-left: 4px solid #ffffff; 
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 568px) {
+    .post-title {
+        font-size: 2.2rem;
+    }
+
+    .post-content {
+        font-size: 1.1rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.7rem;
+    }
+}
 [วางโค้ด CSS ที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/6c79a94c-9748-41f6-872f-3a5c6d15f020)
+![image](https://github.com/user-attachments/assets/2d6725de-c1f4-45dd-95ea-b8bf39eb5f12)
+![image](https://github.com/user-attachments/assets/067add73-c0a9-4e7d-b066-4acf287b31ef)
+
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
